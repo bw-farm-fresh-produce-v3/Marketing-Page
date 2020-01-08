@@ -5,6 +5,32 @@ body {
 	font-family: Fira Sans;
 	font-style: normal;
 }
+.nav {
+	width: 100%;
+	height: 8vh;
+	background-color: #1f2a4c;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+.navList {
+	a {
+		justify-content: space-evenly;
+	}
+}
+ul {
+	display: flex;
+	a {
+		display: flex;
+		text-decoration: none;
+		color: white;
+	}
+}
+
 header {
 	position: relative;
 	text-align: center;
@@ -22,7 +48,7 @@ header {
 	text-align: center;
 	width: 85%;
 	letter-spacing: 0.02rem;
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	// text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 
 	p {
 		width: 60%;
@@ -43,14 +69,25 @@ h1 {
 	align-items: center;
 	justify-content: space-evenly;
 	letter-spacing: 0.03rem;
-
+	@media @phone {
+		width: 100%;
+		display: felx;
+		flex-direction: column;
+	}
 	img {
 		width: 35%;
 		border-radius: 2.5%;
+		@media @phone {
+			width: 100%;
+			order: -2;
+		}
 	}
 	div {
 		width: 40.5%;
 		margin-right: 10%;
+		@media @phone {
+			width: 100%;
+		}
 	}
 	h2 {
 		color: black;
@@ -66,11 +103,18 @@ h1 {
 .main2 {
 	background-color: #1f2a4c;
 	padding: 2%;
-	height: 70vh;
+	height: 75vh;
+	@media @phone {
+		height: auto;
+	}
 	.container {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		@media @phone {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 	h2 {
 		color: white;
@@ -88,10 +132,16 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	padding: 1.5%;
-	height: 50vh;
+	height: 55vh;
 	justify-content: space-evenly;
 	text-align: center;
 	border-radius: 1.5%;
+	@media @phone {
+		width: 100%;
+		margin: 1%;
+		height: auto;
+		padding: 6%;
+	}
 	h3 {
 		font-size: 1.3rem;
 	}
@@ -102,56 +152,121 @@ h1 {
 		text-align: center;
 	}
 }
+.review {
+	padding: 9%;
+}
 .customerQuote {
 	background-color: #f1f3f6;
-	width: 100%;
-	margin: 2%, 10%;
-	padding: 1%;
+	width: 90%;
+	padding: 6%;
 	display: flex;
 	align-items: center;
+	text-align: center;
+	margin-left: 4%;
+	border-radius: 2.5%;
+
+	.reviewText {
+		text-align: left;
+		width: 40%;
+		line-height: 1.4rem;
+		h3 {
+			font-size: 2rem;
+			padding-bottom: 4%;
+		}
+	}
 	i {
 		color: #f46032;
-		font-size: 2rem;
+		font-size: 5rem;
+		margin-bottom: 16%;
+		margin-right: 5%;
 	}
 	.ci {
-		width: 10%;
+		width: 15%;
 		border-radius: 50%;
+		margin: 5%;
 	}
 }
+
+.footerPic {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
 .hands {
 	width: 100%;
-	height: 80vh;
 }
 .handsText {
-	position: relative;
-	top: 50%;
+	position: absolute;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	width: 85%;
 	letter-spacing: 0.02rem;
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
+	p {
+		width: 60%;
+		margin-left: 19%;
+		line-height: 1.5rem;
+		text-align: left;
+	}
 	h2 {
 		color: white;
 		font-size: 3rem;
 		font-weight: bold;
 		padding-bottom: 1%;
 	}
-	p {
-		color: white;
-		width: 60%;
-		margin-left: 20%;
-		line-height: 1.5rem;
-	}
 }
-.footer {
+
+.footerNav {
+	width: 88%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
 }
 .list {
-	width: 30%;
+	width: 26%;
+	padding: 5%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	margin-left: 6%;
+	line-height: 1.8rem;
+
+	h2 {
+		font-weight: bold;
+		margin: 2%;
+		font-size: 1.4rem;
+		padding-bottom: 6%;
+	}
+	a {
+		text-decoration: none;
+		color: grey;
+		margin: 2%;
+		font-size: 1rem;
+	}
+}
+.social {
+	display: flex;
+	justify-content: space-between;
+	padding: 1%;
+	margin-left: 8%;
+
+	.legal {
+		width: 30%;
+
+		a {
+			text-decoration: none;
+			color: grey;
+			font-size: 0.9rem;
+			padding-right: 3%;
+		}
+	}
+	.socialIcons {
+		width: 20%;
+
+		i {
+			color: grey;
+			padding-right: 3%;
+		}
+	}
 }
