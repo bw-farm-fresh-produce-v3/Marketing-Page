@@ -1,0 +1,17 @@
+.button(@bg-color, @width, @font-color){
+    display: inline-block;
+    background-color: @bg-color;
+    // margin: 2 10px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 38px;
+    font-size: 15px;
+    border-radius: 10px;
+    color:@font-color;
+    text-align:center;
+    padding-top: 1%;
+    
+    &:hover{
+        background-color: lighten(#7FAECC, 15%);
+    }
+}
