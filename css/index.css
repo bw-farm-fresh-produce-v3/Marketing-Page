@@ -138,24 +138,23 @@ body {
 }
 .nav {
   width: 100%;
-  height: 8vh;
+  height: 6vh;
+  padding: 1%;
   background-color: #1f2a4c;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .nav a {
   text-decoration: none;
   color: white;
 }
-.navList a {
-  justify-content: space-evenly;
-}
 ul {
   display: flex;
 }
 ul a {
   display: flex;
+  flex-direction: row;
   text-decoration: none;
   color: white;
 }
@@ -197,7 +196,7 @@ h1 {
 @media ( max-width: 500px ) {
   .main1 {
     width: 100%;
-    display: felx;
+    display: flex;
     flex-direction: column;
   }
 }
@@ -231,9 +230,9 @@ h1 {
   line-height: 1.2rem;
 }
 .main2 {
-  background-color: #1f2a4c;
+  background-image: url("/images/accentBG.jpg");
+  background-size: cover;
   padding: 2%;
-  height: 75vh;
 }
 @media ( max-width: 500px ) {
   .main2 {
@@ -267,6 +266,7 @@ h1 {
   flex-direction: column;
   padding: 1.5%;
   height: 55vh;
+  margin-bottom: -1.5%;
   justify-content: space-evenly;
   text-align: center;
   border-radius: 1.5%;
