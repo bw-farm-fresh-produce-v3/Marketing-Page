@@ -143,17 +143,37 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media ( max-width: 500px ) {
+  .nav {
+    padding: 1.5%;
+  }
+}
 .nav .logo {
   margin-left: 3%;
+}
+@media ( max-width: 500px ) {
+  .nav .logo {
+    margin-left: 5%;
+  }
 }
 .nav img {
   width: 20%;
   margin-left: 28%;
   margin-bottom: 2%;
 }
+@media ( max-width: 500px ) {
+  .nav img {
+    width: 27%;
+  }
+}
 .nav p {
   color: white;
   font-size: 0.8rem;
+}
+@media ( max-width: 500px ) {
+  .nav p {
+    font-size: 1rem;
+  }
 }
 .nav i {
   color: white;
@@ -212,9 +232,10 @@ body {
 }
 @media ( max-width: 500px ) {
   .btn {
-    height: 30px;
-    padding-top: 2%;
+    height: 35px;
+    padding-top: 2.5%;
     width: 160px;
+    border-radius: 5px;
   }
 }
 header {
@@ -222,8 +243,21 @@ header {
   text-align: center;
   color: white;
 }
+.mobileHero {
+  display: none;
+}
+@media ( max-width: 500px ) {
+  .mobileHero {
+    display: block;
+  }
+}
 .hero {
   width: 100%;
+}
+@media ( max-width: 500px ) {
+  .hero {
+    display: none;
+  }
 }
 .headerText {
   position: absolute;
@@ -234,16 +268,48 @@ header {
   width: 85%;
   letter-spacing: 0.02rem;
 }
+.headerText h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 1%;
+}
+@media ( max-width: 500px ) {
+  .headerText h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-bottom: 4%;
+  }
+}
 .headerText p {
   width: 60%;
   margin-left: 20%;
   line-height: 1.5rem;
 }
-h1 {
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  padding-bottom: 1%;
+@media ( max-width: 500px ) {
+  .headerText p {
+    width: 80%;
+    margin-left: 8%;
+  }
+}
+.mobile {
+  display: none;
+}
+@media ( max-width: 500px ) {
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d8e7ed;
+    padding: 2%;
+  }
+  .mobile img {
+    width: 6%;
+    margin-left: 5%;
+  }
+  .mobile i {
+    font-size: 1.5rem;
+    margin-right: 6%;
+  }
 }
 .main1 {
   padding: 10%;
@@ -333,7 +399,7 @@ h1 {
 @media ( max-width: 500px ) {
   .box {
     width: 100%;
-    margin: 1% ;
+    margin: 1%;
     height: auto;
     padding: 16% 2%;
   }
