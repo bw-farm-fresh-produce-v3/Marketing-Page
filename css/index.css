@@ -427,6 +427,7 @@ header {
     margin-left: 2.5%;
     height: auto;
     padding: 20% 10%;
+    margin-bottom: 8%;
   }
 }
 .box h3 {
@@ -463,6 +464,13 @@ header {
 .review {
   padding: 9%;
 }
+@media ( max-width: 500px ) {
+  .review {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background: linear-gradient(135deg, white 20%, #f1f3f6 50%);
+  }
+}
 .customerQuote {
   background-color: #f1f3f6;
   width: 90%;
@@ -473,14 +481,33 @@ header {
   margin-left: 4%;
   border-radius: 2.5%;
 }
+@media ( max-width: 500px ) {
+  .customerQuote {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 10%;
+    box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.1), -30px -30px 80px #ffffff, inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+  }
+}
 .customerQuote .reviewText {
   text-align: left;
   width: 40%;
   line-height: 1.4rem;
 }
+@media ( max-width: 500px ) {
+  .customerQuote .reviewText {
+    width: 66%;
+    margin-left: 10%;
+  }
+}
 .customerQuote .reviewText h3 {
   font-size: 2rem;
   padding-bottom: 4%;
+}
+@media ( max-width: 500px ) {
+  .customerQuote .reviewText h3 {
+    font-size: 1.5rem;
+  }
 }
 .customerQuote i {
   color: #f46032;
@@ -488,10 +515,23 @@ header {
   margin-bottom: 16%;
   margin-right: 5%;
 }
+@media ( max-width: 500px ) {
+  .customerQuote i {
+    font-size: 2rem;
+    margin-top: -8%;
+    margin-left: 10%;
+  }
+}
 .customerQuote .ci {
   width: 15%;
   border-radius: 50%;
   margin: 5%;
+}
+@media ( max-width: 500px ) {
+  .customerQuote .ci {
+    margin-left: -16%;
+    margin-top: 15%;
+  }
 }
 .footerPic {
   position: relative;
@@ -500,6 +540,19 @@ header {
 }
 .hands {
   width: 100%;
+}
+@media ( max-width: 500px ) {
+  .hands {
+    display: none;
+  }
+}
+.handsMobile {
+  display: none;
+}
+@media ( max-width: 500px ) {
+  .handsMobile {
+    display: block;
+  }
 }
 .handsText {
   position: absolute;
@@ -510,11 +563,24 @@ header {
   width: 85%;
   letter-spacing: 0.02rem;
 }
+@media ( max-width: 500px ) {
+  .handsText {
+    width: 100%;
+    padding-top: 8%;
+  }
+}
 .handsText p {
   width: 60%;
   margin-left: 19%;
   line-height: 1.5rem;
   text-align: left;
+}
+@media ( max-width: 500px ) {
+  .handsText p {
+    width: 90%;
+    margin-left: 5%;
+    line-height: 1.8rem;
+  }
 }
 .handsText h2 {
   color: white;
@@ -522,10 +588,24 @@ header {
   font-weight: bold;
   padding-bottom: 1%;
 }
+@media ( max-width: 500px ) {
+  .handsText h2 {
+    width: 100%;
+    font-size: 2rem;
+    padding-bottom: 8%;
+  }
+}
 .footerNav {
   width: 88%;
   display: flex;
   flex-direction: row;
+}
+@media ( max-width: 500px ) {
+  .footerNav {
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
 }
 .list {
   width: 26%;
@@ -535,17 +615,39 @@ header {
   margin-left: 6%;
   line-height: 1.8rem;
 }
+@media ( max-width: 500px ) {
+  .list {
+    line-height: 1.6rem;
+    padding: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+  }
+}
 .list h2 {
   font-weight: bold;
   margin: 2%;
   font-size: 1.4rem;
   padding-bottom: 6%;
 }
+@media ( max-width: 500px ) {
+  .list h2 {
+    font-size: 1.2rem;
+  }
+}
 .list a {
   text-decoration: none;
   color: grey;
   margin: 2%;
   font-size: 1rem;
+}
+@media ( max-width: 500px ) {
+  .list a {
+    text-align: left;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+  }
 }
 .social {
   display: flex;
@@ -567,10 +669,97 @@ header {
   font-size: 0.9rem;
   padding-right: 3%;
 }
+@media ( max-width: 500px ) {
+  .social .legal a {
+    width: 50%;
+    padding-right: 6%;
+  }
+}
 .social .socialIcons {
   width: 20%;
+}
+@media ( max-width: 500px ) {
+  .social .socialIcons {
+    width: 30%;
+  }
 }
 .social .socialIcons i {
   color: grey;
   padding-right: 3%;
+}
+@media ( max-width: 500px ) {
+  .social .socialIcons i {
+    padding-right: 10%;
+    font-size: 1.5rem;
+  }
+}
+.aboutheader {
+  background: #133DCE;
+  background: -moz-linear-gradient(top, #133DCE 0%, #1C6EA4 50%, #FFFFFF 100%);
+  background: -webkit-linear-gradient(top, #133DCE 0%, #1C6EA4 50%, #FFFFFF 100%);
+  background: linear-gradient(to bottom, #133DCE 0%, #1C6EA4 50%, #FFFFFF 100%);
+  width: 100%;
+  height: 25vh;
+}
+.aboutheader h1 {
+  color: white;
+  font-size: 4rem;
+  padding: 1.5%;
+}
+.aboutheader h2 {
+  font-size: 3rem;
+  padding: 1.5%;
+}
+.aboutheader p {
+  color: black;
+  font-size: 2rem;
+}
+.Mission {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 8%;
+}
+.Mission h2 {
+  font-size: 1.5rem;
+  padding: 1%;
+}
+.Mission a {
+  padding: 1%;
+}
+.MeetUs {
+  width: 100%;
+}
+.MeetUs h2 {
+  font-size: 2rem;
+  color: navy;
+  font-weight: bold;
+}
+.MeetUs img {
+  width: 40%;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+.LearnMore {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #1C6EA4 50%, #133DCE 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #1C6EA4 50%, #133DCE 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #1C6EA4 50%, #133DCE 100%);
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.LearnMore h2 {
+  font-size: 2rem;
+  margin: 2%;
+}
+.LearnMore a {
+  text-decoration: none;
+  color: white;
+  margin: 2%;
 }
