@@ -170,9 +170,19 @@ body {
   text-decoration: none;
   color: white;
 }
+@media ( max-width: 500px ) {
+  .nav ul a {
+    display: none;
+  }
+}
 .nav .miscNav {
   width: 10%;
   margin-left: 15%;
+}
+@media ( max-width: 500px ) {
+  .nav .miscNav {
+    display: none;
+  }
 }
 .nav .miscNav i {
   border-left: 1px solid lightblue;
@@ -199,6 +209,13 @@ body {
 }
 .btn:hover {
   background-color: #b6d1e2;
+}
+@media ( max-width: 500px ) {
+  .btn {
+    height: 30px;
+    padding-top: 2%;
+    width: 160px;
+  }
 }
 header {
   position: relative;
@@ -316,13 +333,14 @@ h1 {
 @media ( max-width: 500px ) {
   .box {
     width: 100%;
-    margin: 1%;
+    margin: 1% ;
     height: auto;
-    padding: 6%;
+    padding: 16% 2%;
   }
 }
 .box h3 {
   font-size: 1.3rem;
+  font-weight: bold;
 }
 .box img {
   width: 45%;
