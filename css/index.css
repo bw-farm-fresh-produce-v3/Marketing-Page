@@ -320,9 +320,8 @@ header {
 }
 @media ( max-width: 500px ) {
   .main1 {
-    width: 100%;
-    display: flex;
     flex-direction: column;
+    margin-left: 6%;
   }
 }
 .main1 img {
@@ -331,8 +330,9 @@ header {
 }
 @media ( max-width: 500px ) {
   .main1 img {
+    display: none;
     width: 100%;
-    order: -2;
+    padding-bottom: 5%;
   }
 }
 .main1 div {
@@ -351,8 +351,27 @@ header {
   padding-bottom: 3%;
   line-height: 2.5rem;
 }
+@media ( max-width: 500px ) {
+  .main1 h2 {
+    font-size: 1.5rem;
+  }
+}
 .main1 p {
   line-height: 1.2rem;
+}
+@media ( max-width: 500px ) {
+  .main1 p {
+    width: 90%;
+    text-align: center;
+  }
+}
+.main1 .mobileFarmer {
+  display: none;
+}
+@media ( max-width: 500px ) {
+  .main1 .mobileFarmer {
+    display: flex;
+  }
 }
 .main2 {
   background-image: url("/images/accentBG.jpg");
@@ -384,6 +403,11 @@ header {
   padding: 1.5%;
   padding-bottom: 3%;
 }
+@media ( max-width: 500px ) {
+  .main2 h2 {
+    padding: 5%;
+  }
+}
 .box {
   background-color: #d8e7ed;
   width: 23%;
@@ -398,20 +422,43 @@ header {
 }
 @media ( max-width: 500px ) {
   .box {
-    width: 100%;
+    width: 95%;
     margin: 1%;
+    margin-left: 2.5%;
     height: auto;
-    padding: 16% 2%;
+    padding: 20% 10%;
   }
 }
 .box h3 {
   font-size: 1.3rem;
   font-weight: bold;
 }
+@media ( max-width: 500px ) {
+  .box h3 {
+    padding: 5%;
+    line-height: 2rem;
+  }
+}
 .box img {
   width: 45%;
   margin-left: 26%;
   padding-bottom: 3%;
+}
+@media ( max-width: 500px ) {
+  .box img {
+    width: 40%;
+    margin-top: -8%;
+    margin-left: 30%;
+    margin-bottom: 3%;
+  }
+}
+@media ( max-width: 500px ) {
+  .box p {
+    line-height: 1.5rem;
+    width: 85%;
+    margin-left: 3%;
+    padding: 2%;
+  }
 }
 .review {
   padding: 9%;
@@ -508,6 +555,11 @@ header {
 }
 .social .legal {
   width: 30%;
+}
+@media ( max-width: 500px ) {
+  .social .legal {
+    width: 50%;
+  }
 }
 .social .legal a {
   text-decoration: none;
