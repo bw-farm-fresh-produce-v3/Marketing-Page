@@ -789,6 +789,11 @@ Nav {
 #menuToggle input:checked ~ ul {
   transform: none;
 }
+.music {
+  margin: 2%;
+  width: 70%;
+  margin-left: 15%;
+}
 .aboutBody {
   background-image: url("/images/bgphoto.jfif");
   background-size: cover;
@@ -802,23 +807,33 @@ hr {
   padding: 2% 3%;
 }
 .aboutheader h1 {
-  color: white;
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding: 1%;
   text-align: center;
+  background: url(https://envato-shoebox-0.imgix.net/e8f7/1d92-d7da-4837-b17a-a503d3d5fc70/IMG_3208.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1000&s=40cd2c63cf4b2648053b5d271c52f174) -80px -80px;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
 }
 .aboutheader h2 {
   font-size: 2.5rem;
   padding: 1.5%;
   text-align: center;
+  background: url(https://envato-shoebox-0.imgix.net/e8f7/1d92-d7da-4837-b17a-a503d3d5fc70/IMG_3208.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1000&s=40cd2c63cf4b2648053b5d271c52f174) -80px -80px;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
 }
 .aboutheader p {
   color: white;
   font-size: 1.8rem;
-  padding: 1.5%;
+  padding: 1.2%;
   width: 80%;
   text-align: center;
   padding-left: 20%;
+  line-height: 2.5rem;
 }
 .aboutBtn {
   margin-top: 2%;
@@ -829,7 +844,7 @@ hr {
   font-size: 20px;
   width: 120px;
   height: 120px;
-  line-height: 100px;
+  line-height: 98px;
   border-radius: 50%;
   border: double 4px white;
   text-align: center;
@@ -849,10 +864,14 @@ hr {
   margin-left: 4%;
 }
 .Mission h2 {
-  color: white;
   font-size: 2.5rem;
   padding: 1.5%;
   text-align: center;
+  background: url(https://envato-shoebox-0.imgix.net/e8f7/1d92-d7da-4837-b17a-a503d3d5fc70/IMG_3208.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1000&s=40cd2c63cf4b2648053b5d271c52f174) -80px -80px;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
 }
 .Mission p {
   color: white;
@@ -861,13 +880,13 @@ hr {
   width: 80%;
   text-align: center;
   padding-left: 22%;
+  line-height: 2.5rem;
 }
 .Mission a {
   padding: 1%;
 }
 .knockout {
   background: url(https://envato-shoebox-0.imgix.net/e8f7/1d92-d7da-4837-b17a-a503d3d5fc70/IMG_3208.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1000&s=40cd2c63cf4b2648053b5d271c52f174) -80px -80px;
-  color: red;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: bold;
@@ -880,19 +899,32 @@ hr {
 .MeetUs {
   width: 100%;
 }
-.MeetUs h2 {
-  font-size: 2rem;
-  color: navy;
-  font-weight: bold;
-}
 .MeetUs img {
-  width: 40%;
+  width: 80%;
+  margin-bottom: 4%;
+  margin-top: 10%;
 }
 .images {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  position: relative;
-  border-radius: 50%;
+  text-align: center;
+}
+.images div {
+  width: 35%;
+  border: 2px white solid;
+  padding: 2%;
+  margin-right: -20%;
+  margin: 2%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.images div h3 {
+  font-size: 2rem;
+  color: white;
+}
+.images div p {
+  color: white;
+  padding: 2%;
 }
 .LearnMore {
   width: 100%;
@@ -902,11 +934,80 @@ hr {
   align-items: center;
 }
 .LearnMore h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 2%;
+  background: url(https://envato-shoebox-0.imgix.net/e8f7/1d92-d7da-4837-b17a-a503d3d5fc70/IMG_3208.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1000&s=40cd2c63cf4b2648053b5d271c52f174) -80px -80px;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
 }
-.LearnMore a {
+.LearnMore p {
+  font-size: 1.8rem;
   text-decoration: none;
   color: white;
-  margin: 2%;
+}
+.glow-on-hover {
+  margin: 3%;
+  width: 200px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 1%;
+  background: rgba(17, 17, 17, 0);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.glow-on-hover:active {
+  color: #000;
+}
+.glow-on-hover:active:after {
+  background: transparent;
+}
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
