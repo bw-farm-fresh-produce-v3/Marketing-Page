@@ -11,13 +11,44 @@
 
   <link href="css/index.css" rel="stylesheet" />
 
+  <link rel="icon" type="ico" href="/images/favicon-32x32.png" />
+
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-
+<!-- Mobile Burger Nav -->
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="#">
+          <li>Shop</li>
+        </a>
+        <a href="https://farmfresh.now.sh/farms">
+          <li>Farms</li>
+        </a>
+        <a href="#">
+          <li>Account</li>
+        </a>
+        <a href="#">
+          <li>Search</li>
+        </a>
+        <a href="about.html">
+          <li>About Us</li>
+        </a>
+        <a href="https://farmfresh.now.sh/login">
+          <li>Sign In</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
+<!-- Desktop -->
   <nav class="nav">
 
     <div class="logo">
@@ -29,17 +60,18 @@
     <div class="navList">
       <ul>
         <li><a href="#">Shop</a></li>
-        <li><a href="#">Farms</a></li>
+        <li><a href="https://farmfresh.now.sh/farms">Farms</a></li>
         <li><a href="#">Account</a></li>
         <li><a href="#">Search</a></li>
+        <li><a href="about.html">About Us</a></li>
       </ul>
     </div>
     <div class="miscNav">
       <i class="fas fa-shopping-cart"></i>
-      <a class="signIn" href="#">Sign In</a>
+      <a class="signIn" href="https://farmfresh.now.sh/login">Sign In</a>
     </div>
 
-    <div class="btn">Click Here to Sell</button>
+    <a class="btn" href="https://farmfresh.now.sh/register" style="text-decoration: none;">Click Here to Register</a>
 
   </nav>
 
@@ -129,6 +161,7 @@
   <section class="footerPic">
 
     <img class="hands" src="images/hands.jpg" alt="Picture of Hands." />
+    <img class="handsMobile" src="images/handsMobile.jpg" />
 
     <div class="handsText">
       <h2>Be Part of the Food Revolution</h2>
